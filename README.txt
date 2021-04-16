@@ -1,0 +1,1 @@
+A simple recommender system that suggests attractions for a tourist to visit based on a list of their interests.
