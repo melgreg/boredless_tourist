@@ -12,4 +12,16 @@ class Destination:
         return f"Destination('{self.city}, {self.country}')"
 
     def add_attraction(self, attraction):
+        """Add a new attraction to this destination."""
         self.attractions.append(attraction)
+
+    def find_attractions(self, interests):
+        """Create a list of attractions in this destination that match interests."""
+        matches = []
+        for a in self.attractions:
+            for interest in interests:
+                if a.is_match(interest):
+                    matches.append(a)
+                    break
+        return matches
+

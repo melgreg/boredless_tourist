@@ -10,3 +10,7 @@ class Attraction:
 
     def __repr__(self):
         return f"Attraction({self.name}, {list(self.interests)})"
+
+    def is_match(self, interest):
+        """Return True iff this attraction matches to interest."""
+        return interest.lower() in self.interests
