@@ -1,15 +1,11 @@
+import traveler
+
 destinations = [
   'Paris, France',
   'Shanghai, China',
   'Los Angeles, USA',
   'Sao Paulo, Brazil',
   'Cairo, Egypt',
-]
-
-test_traveler = [
-  'Erin Wilkes',
-  'Shanghai, China',
-  ['historical site', 'art'],
 ]
 
 def get_destination_index(destination):
@@ -68,6 +64,10 @@ add_attraction("Cairo, Egypt", ["Pyramids of Giza", ["monument", "historical sit
 add_attraction("Cairo, Egypt", ["Egyptian Museum", ["museum"]])
 
 if __name__ == '__main__':
+  #test_traveler = traveler.Traveler('Erin Wilkes', 'Shanghai, China', ['historical site', 'art'])
+  #print(test_traveler)
+  #print(repr(test_traveler))
+  
   #print(get_destination_index('Los Angeles, USA'))
   #print(get_destination_index('Paris, France'))
   #print(get_destination_index('Hyderabad, India'))
@@ -76,6 +76,6 @@ if __name__ == '__main__':
   #print(attractions)
   #la_arts = find_attractions('Los Angeles, USA', ['art'])
   #print(la_arts)
-  smills_france = get_attractions_for_traveler(['Dereck Smill', 'Paris, France', ['monument']])
-  print(smills_france)
+  #smills_france = get_attractions_for_traveler(['Dereck Smill', 'Paris, France', ['monument']])
+  #print(smills_france)
 
