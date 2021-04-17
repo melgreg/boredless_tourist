@@ -6,7 +6,7 @@ class Destination:
         self.attractions = []
 
     def __str__(self):
-        return f"{self.city}, {self.country}"
+        return f"{self.city}, {self.country}\nAttractions:{self.attractions}"
 
     def __repr__(self):
         return f"Destination('{self.city}, {self.country}')"
